@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logocolor{
+  color: #61dafb;
+}
+
+.Iconcolor{
+  color: #61dafb;
+}
+
+/* Sidebar CSS */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+
+/*  */
+
+.sidebarcontent {
+  margin-top: 50px;
+}
+.checkbox-section {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.checkbox-section h5 {
+  margin-bottom: 15px;
+}
+.checkbox-section .form-check {
+  margin-bottom: 10px;
+}
+.done-button {
+  text-align: center;
+}
+
+/* Login Page css */
+
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -2.125em;
 }
